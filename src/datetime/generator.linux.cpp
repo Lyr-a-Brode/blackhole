@@ -35,7 +35,7 @@ struct visitor_t : public boost::static_visitor<> {
     }
 
     auto operator()(usecond_t) -> void {
-        stream.write("{:06d}", usec);
+        stream.write("{:03d}", usec);
     }
 };
 
